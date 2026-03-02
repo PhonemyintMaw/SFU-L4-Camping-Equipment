@@ -1,0 +1,116 @@
+#list{
+    margin-top: 112px;
+    width: 70%;
+}
+#body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1300px;
+}
+.container{
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.home{
+    margin-left: 10px;
+    color: rgba(1, 1, 1, 0.7);
+    text-decoration: none;
+}
+.home:hover{
+    color: black;
+}
+.head h1{
+    text-align: left;
+    margin: 0px auto;
+}
+.cart-price h3{
+    text-align: right;
+    margin: 0px auto;
+}
+
+/* Cart Item Lists */
+
+.cart-list{
+    margin-top: 20px;
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 20px auto;
+}
+.item-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.item-pic img{
+    width: 100px;
+}
+.item-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+.item-name{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.item-name h2{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.item-name p, h2{
+    margin: 0;
+}
+.tag{
+    font-size: 25px;
+}
+.tag sup{
+    font-size: 15px;
+}
+.item-qty .quantity{
+    width: 50px;
+}
+.item-delete{
+    padding-right: 10px;
+}
+.item-delete img{
+    margin-top: 10px;
+    width: 30px;
+    transition: .3s;
+}
+.item-delete img:hover{
+    transform: scale(1.2);
+}
+
+.item-price{
+   right: 0px;
+}
+.item-price p{
+    text-align: right;
+    margin: 0;
+}
+.sub-total{
+    text-align: right;
+}
+.sub-total button{
+    font-size: 1rem;
+    padding: 5px 10px;
+    width: 80px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: .2s;
+}
+.sub-total button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}

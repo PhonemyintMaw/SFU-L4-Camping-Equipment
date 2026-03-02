@@ -1,0 +1,64 @@
+.body{
+    margin-top: 112px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+    height: 1100px;
+}
+.home{
+    color: rgba(1, 1, 1, 0.7);
+    transition: .2s;
+    text-decoration: none;
+}
+.home:hover{
+    color: black;
+    text-decoration: none;
+}
+.email-section{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    padding: 50px;
+}
+.email-header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.email-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-address, .email-message{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.email-message textarea{
+    max-height: 100px;
+    max-width: 200px;
+}
+.email-button{
+    margin-bottom: 30px;
+}
+.email-button button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: .3s;
+}
+.email-button button:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+    cursor: pointer;
+}

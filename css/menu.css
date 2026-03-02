@@ -1,0 +1,170 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+#card-section{
+    min-height: 100%;
+    width: 100%;
+    margin: 112px auto 10px;
+}
+.home{
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: rgba(1, 1, 1, 0.7);
+    text-decoration: none;
+}
+.home:hover{
+    color: black;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    margin: auto 50px;
+}
+.cards h1{
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+.segments{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 60px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:250px;
+    height: 400px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px black;
+    transition: .2s;
+    padding: 30px;
+}
+sup{
+    font-size: 12px;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 1px 10px black;
+}
+.card-img{
+    border-radius: 15px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+.item{
+    margin-top: 10px;
+    object-fit: contain;
+    height: 150px;
+    text-align: center;
+    transition: .3s;
+}
+.item:hover{
+    transform: scale(1.4);
+}
+.card-title{
+    font-size: 15px;
+}
+.card-des{
+    width: 100%;
+    margin-top: 10px;
+}
+.card-body{
+    margin-bottom: 20px;
+}
+.card-des p{
+    margin: 7px;
+}
+.card-des form{
+    text-align: center;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+}
+.price{
+    color: rgb(99, 99, 99);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tag{
+    margin-left: 5px;
+    font-size: 20px;
+}
+small{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.btn{
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'poppins';
+    padding: 5px;
+    
+}
+.btn:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1530px) {
+    
+    .cards{
+        margin: 100px 50px 30px;
+    }
+
+}
+@media screen and (max-width: 1350px) {
+    
+    .segments{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    
+    .segments{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    
+    .segments{
+        grid-template-columns: 1fr;
+    }
+    .name, .price, .tag{
+        font-size: 20px;
+    }
+    
+}
+@media screen and (max-width: 640px) {
+    
+    .btn{
+        font-size: 1rem;
+        height: 40px;
+        width: 100px;
+    }
+}

@@ -1,0 +1,455 @@
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-width: 100%;
+}
+
+/* Header */
+
+#head{
+    background-image: url(../images/head/pic4.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    min-height: 750px;
+    width: 100%;
+    top: 86px;
+}
+#head::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -2;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: column;
+}
+.header h2{
+    display: block;
+    color: transparent;
+    font-size: 3.5rem;
+    font-weight: bold;
+    position: relative;
+    animation: text_reveal .5s ease forwards;
+}
+.header h2:nth-child(1){
+    animation-delay: 1.2s;
+}
+.header h2:nth-child(2){
+    animation-delay: 3.2s;
+}
+.header h2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(46, 91, 75);
+    animation: text_box 2s ease;
+}
+.header h2:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+.header h2:nth-child(2) span{
+    animation-delay: 2.5s;
+}
+
+/*body*/
+
+.body{
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    margin-top: 790px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+marquee{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Featured */
+
+#featured{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.body-section{
+    margin: auto 30px;
+}
+.featured-section{
+    text-align: center;
+}
+.f-header{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.f-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 60px;
+    width: 100%;
+}
+.f-product{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width:250px;
+    height: 450px;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    object-fit: contain;
+    overflow: hidden;
+    box-shadow: 0px 1px 4px rgba(1, 1, 1, 0.5);
+    transition: .2s;
+}
+.f-product:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(1, 1, 1, 1);
+}
+.f-product-img{
+    margin: 10px auto;
+}
+.f-product-img:hover img{
+    transform: scale(1.2);
+}
+.f-product-img img{
+    margin-top: 10px;
+    text-align: center;
+    transition: .3s;
+    height: 200px;
+}
+.f-product-des h3{
+    font-size: 1.1rem;
+}
+.f-product-des p{
+    font-size: 1rem;
+}
+.f-product-des p span{
+    font-size: 25px;
+}
+.f-product-des p span sup{
+    font-size: 15px;
+}
+.f-product-des h3, p{
+    margin: 0 auto 10px 10px;
+}
+
+.btn{
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: white;
+    font-size: 1rem;
+    font-family: 'poppins';
+    padding: 5px;
+    margin: 10px;
+}
+.btn:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* Cards */
+
+#cards{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.card-header{  
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    border: none;
+}
+.card h2{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    letter-spacing: 2.5px;
+    height: 70px;
+}
+.offers{
+    background-image: url(../images/head/pic1.jpg);
+}
+.camping{
+    background-image: url(../images/head/pic2.jpg);
+}
+.furniture{
+    background-image: url(../images/head/pic3.jpg);
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    object-fit: contain;
+    height: 350px;
+    transition: .2s;
+}
+.product::after{
+    content: '';
+    background-color: black;
+    border-radius: 15px;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.product:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 3px 8px black;
+}
+.sale-btn{
+    color: black;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid white;
+    letter-spacing: 1.5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 5px 8px;
+    transition: .3s;
+    text-align: left;
+}
+.sale-btn:hover{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+/* Services */
+
+#services{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.header{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.s-container{
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;;
+}
+.service-icon{
+    width: 80px;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.se-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.se-container p{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.slider-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icon:hover{
+    transform: scale(1.2);
+}
+.container p:hover, .container .service-icon:hover{
+    cursor: pointer;
+}
+
+/* Testimonials */
+
+#testimonials{
+    text-align: center;
+    height: 500px;
+    margin: 20px auto;
+}
+.test{
+  font-size: 1rem;
+}
+
+.testimonial-image{
+  width: 80px;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* About */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.about-header{
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+.about-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto 100px;
+    border: 1px solid black;
+    border-radius: 20px;
+    object-fit: contain;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+}
+.about-pic{
+    width: 100%;
+    position: relative;
+    margin-right: 20px;
+}
+.about-info{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-pic img{
+    width: 90%;
+    height: 100%;
+}
+
+/* Keyframes */
+@keyframes text_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    50%{
+        color: transparent;
+    }
+    100%{
+        color: white;
+    }
+}
+
+/* Media Query */
+
+@media screen and (max-width:1200px) {
+    .f-group{
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 60px;
+    }
+    .about-body{
+        grid-template-columns: 1fr;
+        
+    }
+}
+@media screen and (max-width:850px) {
+    
+    #head{
+        top: 73px;
+    }
+    .header h1{
+        font-size: 3rem;
+    }
+    .f-group{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+    .product{
+        justify-content: center;
+        align-items: center;
+    }
+    .product h2{
+        font-size: 30px;
+    }
+    .s-container{
+        grid-template-columns: 1fr;
+    }
+    .se-container{
+        margin-bottom: 30px;
+    }
+
+}
+@media  screen and (max-width:555px) {
+    .header h1{
+        font-size: 40px;
+    }
+    
+    .card, .f-group{
+        margin: auto auto;
+    }
+    .f-group{
+        grid-template-columns:  1fr;
+    }
+    .f-product{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:720px) {
+    
+    .header{
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width:400px){
+    body{
+        width: 100%;
+    }
+}
